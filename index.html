@@ -81,13 +81,13 @@ input:focus, textarea:focus, select:focus
 }
 a.style2
 {
-   color: #87CEFA;
+   color: #00FF7F;
    font-weight: bold;
    text-decoration: underline;
 }
 a.style2:visited
 {
-   color: #800080;
+   color: #006400;
    text-decoration: underline;
 }
 a.style2:active
@@ -262,11 +262,11 @@ a.style3:hover
    border: 0px solid #000000;
    padding: 0;
    margin: 0;
-   text-align: left;
+   text-align: justify;
 }
 #wb_Text7 div
 {
-   text-align: left;
+   text-align: justify;
 }
 #wb_Text10 
 {
@@ -837,6 +837,66 @@ a.style3:hover
    height: 0;
    line-height: 0;
 }
+#wb_Marquee2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 1px solid transparent;
+   overflow-y: hidden;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Marquee2
+{
+   color: #CED1D6;
+   font-family: "Trebuchet MS";
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 17.5px;
+}
+#wb_Marquee2 p, #wb_Marquee2 ul
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Marquee2
+{
+   overflow: hidden;
+   position: relative;
+}
+#Marquee2
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   -webkit-animation: Marquee2-marquee 10000ms linear infinite;
+   animation: Marquee2-marquee 10000ms linear infinite;
+}
+@-webkit-keyframes Marquee2-marquee
+{
+   0%
+   {
+   -webkit-transform: translateX(100%);
+   }
+   100%
+   {
+   -webkit-transform: translateX(-100%);
+   }
+}
+@keyframes Marquee2-marquee
+{
+   0%
+   {
+   transform: translateX(100%);
+   }
+   100%
+   {
+   transform: translateX(-100%);
+   }
+}
 </style>
 <script type="text/javascript" src="jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="wb.lazyload.min.js"></script>
@@ -852,14 +912,14 @@ $(document).ready(function()
 </head>
 <body>
 <div id="container">
-<div id="wb_Shape4" style="position:absolute;left:519px;top:403px;width:280px;height:427px;z-index:10;">
+<div id="wb_Shape4" style="position:absolute;left:519px;top:403px;width:280px;height:427px;z-index:11;">
 <img src="images/img0001.gif" id="Shape4" alt="" style="width:280px;height:427px;"></div>
-<div id="wb_Shape1" style="position:absolute;left:536px;top:425px;width:249px;height:35px;z-index:11;">
+<div id="wb_Shape1" style="position:absolute;left:536px;top:425px;width:249px;height:35px;z-index:12;">
 <img src="images/img0002.gif" id="Shape1" alt="" style="width:249px;height:35px;"></div>
 
-<div id="wb_Shape3" style="position:absolute;left:0px;top:403px;width:519px;height:457px;z-index:13;">
+<div id="wb_Shape3" style="position:absolute;left:0px;top:403px;width:519px;height:457px;z-index:14;">
 <img src="images/img0003.gif" id="Shape3" alt="" style="width:519px;height:457px;"></div>
-<div id="wb_Text4" style="position:absolute;left:16px;top:453px;width:486px;height:372px;text-align:justify;z-index:14;">
+<div id="wb_Text4" style="position:absolute;left:16px;top:453px;width:486px;height:372px;text-align:justify;z-index:15;">
 <div style="position:absolute;left:0px;top:0px;width:486px;height:22px;"><span style="color:#87CEFA;font-family:'Trebuchet MS';font-size:16px;"><strong>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Theme</strong></span><strong></strong></div>
 <div style="position:absolute;left:0px;top:19px;width:486px;height:22px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:16px;"><strong><br></strong></span></div>
 <div style="position:absolute;left:0px;top:37px;width:486px;height:22px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:16px;"><strong>Mathematics is a universal part of human culture. It is the tool </strong></span><span style="letter-spacing:486px;"> &nbsp; </span></div>
@@ -881,69 +941,69 @@ $(document).ready(function()
 <div style="position:absolute;left:0px;top:334px;width:486px;height:22px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:16px;"><strong>presentation of new advances, research results and to discuss </strong></span><span style="letter-spacing:486px;"> &nbsp; </span></div>
 <div style="position:absolute;left:0px;top:353px;width:486px;height:22px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:16px;"><strong>the future trends in the field of mathematics.</strong></span></div>
 </div>
-<div id="wb_Shape2" style="position:absolute;left:0px;top:860px;width:519px;height:414px;z-index:15;">
+<div id="wb_Shape2" style="position:absolute;left:0px;top:860px;width:519px;height:414px;z-index:16;">
 <img src="images/img0004.gif" id="Shape2" alt="" style="width:519px;height:414px;"></div>
-<div id="wb_Shape5" style="position:absolute;left:0px;top:1274px;width:519px;height:436px;z-index:16;">
+<div id="wb_Shape5" style="position:absolute;left:0px;top:1274px;width:519px;height:436px;z-index:17;">
 <img src="images/img0005.gif" id="Shape5" alt="" style="width:519px;height:436px;"></div>
-<div id="wb_Shape6" style="position:absolute;left:535px;top:626px;width:249px;height:35px;z-index:17;">
+<div id="wb_Shape6" style="position:absolute;left:535px;top:626px;width:249px;height:35px;z-index:18;">
 <img src="images/img0006.gif" id="Shape6" alt="" style="width:249px;height:35px;"></div>
-<div id="wb_Text3" style="position:absolute;left:545px;top:431px;width:226px;height:22px;z-index:17;">
+<div id="wb_Text3" style="position:absolute;left:545px;top:431px;width:226px;height:22px;z-index:19;">
 <div style="position:absolute;left:0px;top:0px;width:226px;height:23px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:19px;"><strong>Latest News</strong></span></div>
 </div>
-<div id="wb_Text5" style="position:absolute;left:544px;top:632px;width:213px;height:22px;z-index:18;">
+<div id="wb_Text5" style="position:absolute;left:544px;top:632px;width:213px;height:22px;z-index:20;">
 <div style="position:absolute;left:0px;top:0px;width:213px;height:23px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:19px;"><strong>Information for Authors</strong></span></div>
 </div>
-<div id="wb_Text7" style="position:absolute;left:536px;top:466px;width:246px;height:155px;text-align:justify;z-index:20;">
-<div style="position:absolute;left:0px;top:0px;width:246px;height:18px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:13px;"><strong>1. </strong>Last Date for </span><span style="color:#00FF00;font-family:'Trebuchet MS';font-size:13px;">submission of </span><span style="letter-spacing:246px;"> &nbsp; </span></div>
-<div style="position:absolute;left:0px;top:15px;width:246px;height:18px;"><span style="color:#00FF00;font-family:'Trebuchet MS';font-size:13px;">abstract/full paper </span><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:13px;">is extended up to </span><span style="letter-spacing:246px;"> &nbsp; </span></div>
-<div style="position:absolute;left:0px;top:31px;width:246px;height:18px;"><span style="color:#00FF00;font-family:'Trebuchet MS';font-size:13px;"><strong>28/02/2020</strong></span></div>
-<div style="position:absolute;left:0px;top:46px;width:246px;height:18px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:13px;"><br></span></div>
-<div style="position:absolute;left:0px;top:62px;width:246px;height:18px;"><span style="color:#FF4500;font-family:'Trebuchet MS';font-size:13px;">2. Last Date for Registration - 28/2/2020</span></div>
-<div style="position:absolute;left:0px;top:77px;width:246px;height:18px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:13px;"><br></span></div>
-<div style="position:absolute;left:0px;top:93px;width:246px;height:18px;"><span style="color:#00FEFE;font-family:'Trebuchet MS';font-size:13px;">3. Journals for publication has been </span><span style="letter-spacing:246px;"> &nbsp; </span></div>
-<div style="position:absolute;left:0px;top:108px;width:246px;height:18px;"><span style="color:#00FEFE;font-family:'Trebuchet MS';font-size:13px;">updated.&nbsp; Please check the &quot;Publications&quot; </span><span style="letter-spacing:246px;"> &nbsp; </span></div>
-<div style="position:absolute;left:0px;top:124px;width:246px;height:18px;"><span style="color:#00FEFE;font-family:'Trebuchet MS';font-size:13px;">page for&nbsp; more information.</span></div>
+<div id="wb_Text7" style="position:absolute;left:536px;top:466px;width:248px;height:154px;z-index:21;">
+<div style="position:absolute;left:0px;top:0px;width:248px;height:18px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:13px;"><strong>1. </strong>Last Date for </span><span style="color:#00FF00;font-family:'Trebuchet MS';font-size:13px;">submission of </span></div>
+<div style="position:absolute;left:0px;top:15px;width:248px;height:18px;"><span style="color:#00FF00;font-family:'Trebuchet MS';font-size:13px;">abstract/full paper </span><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:13px;">is extended up to </span></div>
+<div style="position:absolute;left:0px;top:31px;width:248px;height:18px;"><span style="color:#00FF00;font-family:'Trebuchet MS';font-size:13px;"><strong>28/02/2020</strong></span></div>
+<div style="position:absolute;left:0px;top:46px;width:248px;height:18px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:13px;"><br></span></div>
+<div style="position:absolute;left:0px;top:62px;width:248px;height:18px;"><span style="color:#FF4500;font-family:'Trebuchet MS';font-size:13px;">2. Last Date for Registration - 28/2/2020</span></div>
+<div style="position:absolute;left:0px;top:77px;width:248px;height:18px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:13px;"><br></span></div>
+<div style="position:absolute;left:0px;top:93px;width:248px;height:18px;"><span style="color:#00FEFE;font-family:'Trebuchet MS';font-size:13px;">3. Journals for publication has been </span></div>
+<div style="position:absolute;left:0px;top:108px;width:248px;height:18px;"><span style="color:#00FEFE;font-family:'Trebuchet MS';font-size:13px;">updated.&nbsp; Please check the &quot;Publications&quot; </span></div>
+<div style="position:absolute;left:0px;top:124px;width:248px;height:18px;"><span style="color:#00FEFE;font-family:'Trebuchet MS';font-size:13px;">page for&nbsp; more information.</span><strong></strong></div>
 </div>
-<div id="wb_Shape7" style="position:absolute;left:518px;top:818px;width:281px;height:892px;z-index:22;">
+<div id="wb_Shape7" style="position:absolute;left:518px;top:818px;width:281px;height:892px;z-index:23;">
 <img src="images/img0007.gif" id="Shape7" alt="" style="width:281px;height:892px;"></div>
-<div id="wb_Shape8" style="position:absolute;left:534px;top:860px;width:249px;height:35px;z-index:23;">
+<div id="wb_Shape8" style="position:absolute;left:534px;top:860px;width:249px;height:35px;z-index:24;">
 <img src="images/img0008.gif" id="Shape8" alt="" style="width:249px;height:35px;"></div>
-<div id="wb_Text13" style="position:absolute;left:543px;top:865px;width:226px;height:22px;z-index:24;">
+<div id="wb_Text13" style="position:absolute;left:543px;top:865px;width:226px;height:22px;z-index:25;">
 <div style="position:absolute;left:0px;top:0px;width:226px;height:23px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:19px;"><strong>Conference Venue</strong></span></div>
 </div>
-<div id="wb_FontAwesomeIcon1" style="position:absolute;left:538px;top:678px;width:33px;height:27px;text-align:center;z-index:25;">
+<div id="wb_FontAwesomeIcon1" style="position:absolute;left:538px;top:678px;width:33px;height:27px;text-align:center;z-index:26;">
 <svg id="FontAwesomeIcon1" height="100%" width="100%" style="position:absolute;height:100%;width:100%;left:0;top:0" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg">
    <g transform="scale(0.0145)">
    <path transform="rotate(180) scale(-1,1) translate(0,-1536)" d="M1042 833q0 88 -60 121q-33 18 -117 18h-123v-281h162q66 0 102 37t36 105zM1094 548l205 -373q8 -17 -1 -31q-8 -16 -27 -16h-152q-20 0 -28 17l-194 365h-155v-350q0 -14 -9 -23t-23 -9h-134q-14 0 -23 9t-9 23v960q0 14 9 23t23 9h294q128 0 190 -24q85 -31 134 -109t49 -180q0 -92 -42.5 -165.5t-115.5 -109.5q6 -10 9 -16zM896 1376q-150 0 -286 -58.5t-234.5 -157t-157 -234.5t-58.5 -286t58.5 -286t157 -234.5t234.5 -157t286 -58.5t286 58.5t234.5 157t157 234.5t58.5 286t-58.5 286t-157 234.5t-234.5 157t-286 58.5zM1792 640q0 -182 -71 -348t-191 -286t-286 -191t-348 -71t-348 71t-286 191t-191 286t-71 348t71 348t191 286t286 191t348 71t348 -71t286 -191t191 -286t71 -348z"/>
    </g>
 </svg>
 </div>
-<div id="wb_FontAwesomeIcon2" style="position:absolute;left:539px;top:724px;width:31px;height:27px;text-align:center;z-index:26;">
+<div id="wb_FontAwesomeIcon2" style="position:absolute;left:539px;top:724px;width:31px;height:27px;text-align:center;z-index:27;">
 <svg id="FontAwesomeIcon2" height="100%" width="100%" style="position:absolute;height:100%;width:100%;left:0;top:0" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
    <g transform="scale(0.0134)">
    <path transform="rotate(180) scale(-1,1) translate(0,-1536)" d="M1639 1058q40 -57 18 -129l-275 -906q-19 -64 -76.5 -107.5t-122.5 -43.5h-923q-77 0 -148.5 53.5t-99.5 131.5q-24 67 -2 127q0 4 3 27t4 37q1 8 -3 21.5t-3 19.5q2 11 8 21t16.5 23.5t16.5 23.5q23 38 45 91.5t30 91.5q3 10 0.5 30t-0.5 28q3 11 17 28t17 23q21 36 42 92t25 90q1 9 -2.5 32t0.5 28q4 13 22 30.5t22 22.5q19 26 42.5 84.5t27.5 96.5q1 8 -3 25.5t-2 26.5q2 8 9 18t18 23t17 21q8 12 16.5 30.5t15 35t16 36t19.5 32t26.5 23.5t36 11.5t47.5 -5.5l-1 -3q38 9 51 9h761q74 0 114 -56t18 -130l-274 -906q-36 -119 -71.5 -153.5t-128.5 -34.5h-869q-27 0 -38 -15q-11 -16 -1 -43q24 -70 144 -70h923q29 0 56 15.5t35 41.5l300 987q7 22 5 57q38 -15 59 -43zM575 1056q-4 -13 2 -22.5t20 -9.5h608q13 0 25.5 9.5t16.5 22.5l21 64q4 13 -2 22.5t-20 9.5h-608q-13 0 -25.5 -9.5t-16.5 -22.5zM492 800q-4 -13 2 -22.5t20 -9.5h608q13 0 25.5 9.5t16.5 22.5l21 64q4 13 -2 22.5t-20 9.5h-608q-13 0 -25.5 -9.5t-16.5 -22.5z"/>
    </g>
 </svg>
 </div>
-<div id="wb_FontAwesomeIcon3" style="position:absolute;left:538px;top:807px;width:33px;height:35px;text-align:center;z-index:27;">
+<div id="wb_FontAwesomeIcon3" style="position:absolute;left:538px;top:807px;width:33px;height:35px;text-align:center;z-index:28;">
 <svg id="FontAwesomeIcon3" height="100%" width="100%" style="position:absolute;height:100%;width:100%;left:0;top:0" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg">
    <g transform="scale(0.0162)">
    <path transform="rotate(180) scale(-1,1) translate(0,-1536)" d="M1408 544v-480q0 -26 -19 -45t-45 -19h-384v384h-256v-384h-384q-26 0 -45 19t-19 45v480q0 1 0.5 3t0.5 3l575 474l575 -474q1 -2 1 -6zM1631 613l-62 -74q-8 -9 -21 -11h-3q-13 0 -21 7l-692 577l-692 -577q-12 -8 -24 -7q-13 2 -21 11l-62 74q-8 10 -7 23.5t11 21.5l719 599q32 26 76 26t76 -26l244 -204v195q0 14 9 23t23 9h192q14 0 23 -9t9 -23v-408l219 -182q10 -8 11 -21.5t-7 -23.5z"/>
    </g>
 </svg>
 </div>
-<div id="wb_FontAwesomeIcon4" style="position:absolute;left:539px;top:767px;width:30px;height:29px;text-align:center;z-index:28;">
+<div id="wb_FontAwesomeIcon4" style="position:absolute;left:539px;top:767px;width:30px;height:29px;text-align:center;z-index:29;">
 <svg id="FontAwesomeIcon4" height="100%" width="100%" style="position:absolute;height:100%;width:100%;left:0;top:0" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
    <g transform="scale(0.0134)">
    <path transform="rotate(180) scale(-1,1) translate(0,-1536)" d="M1400 256h-248v-248q29 10 41 22l185 185q12 12 22 41zM1120 384h288v896h-1280v-1280h896v288q0 40 28 68t68 28zM1536 1312v-1024q0 -40 -20 -88t-48 -76l-184 -184q-28 -28 -76 -48t-88 -20h-1024q-40 0 -68 28t-28 68v1344q0 40 28 68t68 28h1344q40 0 68 -28t28 -68z"/>
    </g>
 </svg>
 </div>
-<div id="wb_Text8" style="position:absolute;left:573px;top:684px;width:174px;height:15px;z-index:29;">
+<div id="wb_Text8" style="position:absolute;left:573px;top:684px;width:174px;height:15px;z-index:30;">
 <p style="color:#FFFFFF;"><a href="https://forms.gle/JbDfaCWM4ATQRHs77" class="style3"><span style="text-decoration:underline;font-weight:bold;font-style:italic;">Registration Form</span></a></p></div>
-<div id="wb_Text19" style="position:absolute;left:573px;top:818px;width:174px;height:15px;z-index:30;">
+<div id="wb_Text19" style="position:absolute;left:573px;top:818px;width:174px;height:15px;z-index:31;">
 <p style="color:#FFFFFF;"><span style="font-weight:bold;color:#FFFFFF;">Accomodation</span></p></div>
-<div id="wb_Text20" style="position:absolute;left:537px;top:915px;width:246px;height:153px;z-index:31;">
+<div id="wb_Text20" style="position:absolute;left:537px;top:915px;width:246px;height:153px;z-index:32;">
 <div style="position:absolute;left:0px;top:0px;width:246px;height:18px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:15px;"><strong>SRM Institute of Science and </strong></span></div>
 <div style="position:absolute;left:0px;top:17px;width:246px;height:18px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:15px;"><strong>Technology</strong></span></div>
 <div style="position:absolute;left:0px;top:34px;width:246px;height:18px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:15px;"><strong>#1, Jawaharlal Nehru Salai</strong></span></div>
@@ -996,12 +1056,12 @@ $(document).ready(function()
 <div style="position:absolute;left:0px;top:692px;width:473px;height:22px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:16px;"><strong>ensure SRM Institute of Science and Technology's academic </strong></span><span style="letter-spacing:473px;"> &nbsp; </span></div>
 <div style="position:absolute;left:0px;top:711px;width:473px;height:22px;"><span style="color:#CED1D6;font-family:'Trebuchet MS';font-size:16px;"><strong>research excellence is well supported.</strong></span></div>
 </div>
-<div id="wb_Text1" style="position:absolute;left:574px;top:730px;width:174px;height:15px;z-index:33;">
+<div id="wb_Text1" style="position:absolute;left:574px;top:730px;width:174px;height:15px;z-index:34;">
 <p style="color:#FFFFFF;"><a href="./Publications.html" class="style3"><span style="text-decoration:underline;font-weight:bold;font-style:italic;">Publications</span></a></p></div>
-<div id="wb_Text14" style="position:absolute;left:573px;top:774px;width:174px;height:15px;z-index:34;">
+<div id="wb_Text14" style="position:absolute;left:573px;top:774px;width:174px;height:15px;z-index:35;">
 <p style="color:#FFFFFF;"><a href="NCRTMA20_Brochure.pdf" class="style3"><span style="text-decoration:underline;font-weight:bold;font-style:italic;">Brochure</span></a></p></div>
 </div>
-<div id="Layer1" style="position:absolute;text-align:center;left:0px;top:0px;width:100%;height:394px;z-index:35;">
+<div id="Layer1" style="position:absolute;text-align:center;left:0px;top:0px;width:100%;height:394px;z-index:36;">
 <div id="Layer1_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Text6" style="position:absolute;left:276px;top:22px;width:472px;height:102px;text-align:center;z-index:0;" onclick="AnimateCss('wb_Text1', 'animate-font-size', 0, 500);return false;">
 <span style="color:#4169E1;font-family:'Trebuchet MS';font-size:29px;"><strong>Fourth National Conference on Recent Trends in Mathematics &amp; its Applications (NCRTMA'20)</strong></span></div>
@@ -1041,13 +1101,16 @@ $(document).ready(function()
 </li>
 </ul>
 </div>
+<div id="wb_Marquee2" style="position:absolute;left:7px;top:378px;width:785px;height:14px;text-align:center;z-index:8;overflow:hidden">
+<div id="Marquee2">
+<p style="font-family:Arial;color:#CED1D6;"><span style="font-family:Trebuchet MS;color:#CED1D6;">Last Date for </span><span style="font-family:Trebuchet MS;color:#00FF00;">submission of abstract</span><span style="font-family:Trebuchet MS;color:#00FF00;">/full paper </span><span style="font-family:Trebuchet MS;color:#CED1D6;">is extended up to </span><span style="font-family:Trebuchet MS;font-weight:bold;color:#00FF00;">28/02/2020</span></p></div></div>
 </div>
 </div>
-<div id="Layer4" style="position:absolute;text-align:center;left:0px;top:1710px;width:100%;height:67px;z-index:36;">
+<div id="Layer4" style="position:absolute;text-align:center;left:0px;top:1710px;width:100%;height:67px;z-index:37;">
 <div id="Layer4_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_Text11" style="position:absolute;left:7px;top:26px;width:780px;height:12px;text-align:center;z-index:8;">
-<span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:11px;">Copyright Â© 2020 SRMIST&nbsp; Â·&nbsp; All Rights reserved&nbsp; Â·&nbsp; Designed with &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; by </span><span style="color:#87CEFA;font-family:'Trebuchet MS';font-size:11px;"><strong><u><a href="https://www.instagram.com/shrirxm._/" class="style2" title="Shriram G.">Shriram G.</a></u></strong></span></div>
-<div id="wb_FontAwesomeIcon5" style="position:absolute;left:515px;top:25px;width:11px;height:17px;text-align:center;z-index:9;">
+<div id="wb_Text11" style="position:absolute;left:7px;top:26px;width:780px;height:12px;text-align:center;z-index:9;">
+<span style="color:#FFFFFF;font-family:'Trebuchet MS';font-size:11px;">Copyright © 2020 SRMIST&nbsp; ·&nbsp; All Rights reserved&nbsp; ·&nbsp; Designed with&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; by </span><span style="color:#87CEFA;font-family:'Trebuchet MS';font-size:11px;"><strong><u><a href="https://www.instagram.com/shrirxm._/" class="style2" title="Shriram G.">Shriram G.</a></u></strong></span></div>
+<div id="wb_FontAwesomeIcon5" style="position:absolute;left:515px;top:25px;width:11px;height:17px;text-align:center;z-index:10;">
 <div id="FontAwesomeIcon5"><i class="fa fa-heart"></i></div></div>
 </div>
 </div>
